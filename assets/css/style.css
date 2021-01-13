@@ -1,3 +1,63 @@
+.navbar {
+    background-color: rgba(52, 84, 213, .5);
+}
+
+a {
+    color: #8BFF5A;
+}
+
+.testimonials {
+    background-color: #3454D5;
+}
+
+.events-schedule {
+    background-color: #8BFF5A;
+}
+
+.sign-up {
+    background-color: #3454D5;
+}
+
+.footer {    
+    background-color: #8BFF5A;
+}
+
+p {
+    position: relative;
+}
+
+html {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 body {
-    margin-top: 48px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.hero-image { 
+    height: 100vh;
+  background: url(../images/hero_img2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;   
+}
+
+nav a {
+    font-size: 36px;
+}
+
+.navbar-brand {
+    font-size: 48px;
+}
+
+h1 {
+    color: white;
+    font-size: 76px;
 }
