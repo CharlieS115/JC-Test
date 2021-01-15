@@ -1,8 +1,14 @@
+/*---------------------------------------------------------Colours-----*/
+
 .navbar {
     background-color: rgba(52, 84, 213, .5);
 }
 
 a {
+    color: #8BFF5A;
+}
+
+.overlapping-text h1, .overlapping-text h2 {
     color: #8BFF5A;
 }
 
@@ -22,8 +28,20 @@ a {
     background-color: #8BFF5A;
 }
 
-p {
-    position: relative;
+/*--------------------------------------------------------------Text-----*/
+
+.testimonials-header {
+    text-align: center;
+    font-size: 48px;
+    margin: 5rem;
+}
+
+.overlapping-text {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 1em;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 48pxx;
 }
 
 html {
@@ -35,6 +53,14 @@ html {
 body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
 }
 
 .hero-image { 
@@ -60,4 +86,8 @@ nav a {
 h1 {
     color: white;
     font-size: 76px;
+}
+
+.quotes {
+    padding-bottom: 5rem;
 }
