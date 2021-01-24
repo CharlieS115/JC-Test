@@ -254,3 +254,8 @@ nav a {
     color: white;
 }
 
+@media (max-width: 1000px) {
+    section, div, h1, h2, h3, a, p, .nav-item, .navbar-brand {
+        font-size: 11px;
+    }
+}
