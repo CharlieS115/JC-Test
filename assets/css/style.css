@@ -5,11 +5,11 @@
 }
 
 a {
-    color: #8BFF5A;
+    color: #BEEE62;
 }
 
 .overlapping-text h1, .overlapping-text h3 {
-    color: #8BFF5A;
+    color: #BEEE62;
 }
 
 .testimonials {
@@ -17,15 +17,11 @@ a {
 }
 
 .events-schedule {
-    background-color: #8BFF5A;
-}
-
-.sign-up {
-    background-color: #113CF3;
+    background-color: #BEEE62;
 }
 
 footer {    
-    background-color: #8BFF5A;
+    background-color: #BEEE62;
 }
 
 /*--------------------------------------------------------------Text-----*/
@@ -36,6 +32,12 @@ footer {
     color: #8BFF5A;
 }
 
+.events-schedule-heading {
+    text-align: center;
+    padding: 5rem;
+    color: #113CF3;
+}
+
 .overlapping-text {
     text-align: center;
     font-family: "Architects Daughter", sans-serif;
@@ -43,15 +45,15 @@ footer {
 }
 
 h1 {
-    font-size: 72px;
-}
-
-h2 {
     font-size: 48px;
 }
 
-h3 {
+h2 {
     font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p {
@@ -78,7 +80,7 @@ body {
 }
 
 i {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .contact-item p, i {
@@ -117,7 +119,7 @@ p {
 }
 
 .hero-image { 
-    height: 100vh;
+    height: 90vh;
   background: url(../images/hero_img2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -126,11 +128,12 @@ p {
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 100%;
 }
 
-.events-image { 
-    height: 100vh;
-  background: url(../images/event_img1.jpg) no-repeat center center fixed; 
+.cta-image { 
+    height: 80vh;
+  background: url(../images/cta_img1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,22 +141,24 @@ p {
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 100%;
 }
+
 .navbar a {
     text-decoration: none;
-    color: #8BFF5A;
+    color: #BEEE62;
 }
 
 .nav-item a:hover {
-    border-bottom: 5px solid #8BFF5A;
+    border-bottom: 5px solid #BEEE62;
 }
 
 .active {
-    border-bottom: 5px solid #8BFF5A;
+    border-bottom: 5px solid #BEEE62;
 }
 
 nav a {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .navbar-brand {
@@ -166,18 +171,7 @@ nav a {
     padding-bottom: 5rem;
 }
 
-.cta-image {
-    height: 80vh;
-    display: block;
-    align-items: center;
-    padding: 80px;
-    width: 100%;
-    transform: scale(0.8, 1);
-}
 
-.sign-up {
-    position: relative;
-}
 
 .cta-text-block {
     position: absolute;
@@ -191,16 +185,14 @@ nav a {
     border-radius: 25px;
 }
 
-.cta-text {
-    margin: 20px;
-}
+
 
 .btn {
     font-size: 18px;
     border-radius: 25px;
     font-weight: 700;
     margin: 40px;
-    background-color: #8BFF5A;
+    background-color: #BEEE62;
     color: #113CF3;
     letter-spacing: 6px;
     font-family: "Architects Daughter", sans-serif;
@@ -209,7 +201,7 @@ nav a {
 }
 
 .btn:hover {
-    background-color: #8BFF5A;
+    background-color: #BEEE62;
     color: #113CF3;     
 }
 
@@ -220,17 +212,31 @@ nav a {
     height: 50px;
     width: 50px;
     text-align: center;
-    padding: 12px;
+    padding: 13px;
     margin: 10px 10px 10px 0;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    
+    font-size: 24px;
 }
 
+
 .social-links li a i:hover {
-    background-color: #8BFF5A;
+    background-color: #BEEE62;
     color: #113CF3;
+    transform: scale(1.5, 1.5);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.social-links li a i:not(:hover) {
+    background-color: #113CF3;
+    color: #BEEE62;
+    transform: scale(1, 1);
+    transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -webkit-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
 }
 
 .footer-content {
@@ -254,8 +260,36 @@ nav a {
     color: white;
 }
 
-@media (max-width: 1000px) {
-    section, div, h1, h2, h3, a, p, .nav-item, .navbar-brand {
-        font-size: 11px;
-    }
+.events-table {
+    text-align: center;
+    padding: 0 80px 80px 80px;
+}
+
+tr {
+    background-color: rgba(17, 60, 243, .9);
+}
+
+td, th {
+    color: white;
+    font-size: 18px;
+}
+
+.table td, .table th, .table thead th {
+    border-top: 3px solid #BEEE62;
+    border-bottom: 3px solid #BEEE62;
+}
+
+.event-schedule-sub-heading {
+    color: #113CF3;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cta-text-tile {
+    background-color: rgba(17, 60, 243, .75);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    width: 40rem;
 }
